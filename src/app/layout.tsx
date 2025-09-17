@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import SplashCursor from "@/components/ui/SplashCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Quá trình phát triển tư tưởng Hồ Chí Minh giai đoạn 1930 đến 1969",
+  title: "Sứ mệnh lịch sử của giai cấp công nhân",
   description:
-    "Dự án môn học HCM202 của trường đại học FPT do nhóm 2 thực hiện",
+    "Sản phẩm sáng tạo của nhóm 1, môn MLN131-SE1735 trường đại học FPT",
 };
 
 export default function RootLayout({
@@ -26,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/c1/Lenin-Silhoutte_.svg" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
