@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import { sendMessageApi } from "@/api/messages";
+import { sendMessageToGemini } from "@/api/messages";
 
 export interface ChatMessage {
   sender: "user" | "ai";
@@ -28,7 +28,7 @@ export const ChatProvider: React.FC<{ children: React.ReactNode }> = ({ children
     // Add user message to state
     const userMsg: ChatMessage = {
       sender: "user" as const,
-      text: text,
+      text,
       createdAt: new Date().toISOString(),
     };
     
@@ -36,17 +36,17 @@ export const ChatProvider: React.FC<{ children: React.ReactNode }> = ({ children
     
     try {
       // Send to API and get AI reply text
-      const res = await sendMessageApi({ message: text });
+      const aiText = await sendMessageToGemini(text);
       
       // Add AI message to state
       const aiMsg: ChatMessage = {
         sender: "ai" as const,
-        text: res.text,
+        text: aiText,
         createdAt: new Date().toISOString(),
       };
       
       setMessages(prev => [...prev, aiMsg]);
-      return res.text;
+      return aiText;
     } catch (error) {
       console.error("Failed to send message:", error);
       throw error;
