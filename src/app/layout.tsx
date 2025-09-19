@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sứ mệnh lịch sử của giai cấp công nhân",
+  title: "Quá trình phát triển tư tưởng Hồ Chí Minh giai đoạn 1930-1969",
   description:
-    "Sản phẩm sáng tạo của nhóm 1, môn MLN131-SE1735 trường đại học FPT",
+    "Sản phẩm sáng tạo của nhóm 2, môn HCM202-SE1735 trường đại học FPT",
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/c1/Lenin-Silhoutte_.svg" />
+        <link rel="icon" href="/assets/image/hcm-logo.png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

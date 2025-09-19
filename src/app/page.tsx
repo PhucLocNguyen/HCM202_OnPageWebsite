@@ -2,20 +2,14 @@
 
 import ConclusionSection from "@/app/_components/conclusion";
 import DevelopmentSection from "@/app/_components/development";
-import InfinityBrand from "@/app/_components/infinity-brand";
-import Introduction from "@/app/_components/introduction";
 import LazyVideo from "@/app/_components/lazy-video";
 import OpinionSection from "@/app/_components/opinion";
 import { TimelineDemo } from "@/app/_components/timeline-2";
-import { TracingBeamDemo } from "@/app/_components/tracing-beam";
 import WelcomeSection from "@/app/_components/welcome-section";
 import LampDemo from "@/components/ui/lamp";
 import { SiteHeader } from "@/components/ui/site-header";
 import { JSX, useState } from "react";
-import { HeroParallaxDemo } from "./_components/hero-parallax";
-import { GoogleGeminiEffectDemo } from "./_components/google-gemini-effect";
 import PlantLoader from "@/components/ui/plant-loader";
-import ChatBotIntegration from "@/app/_components/chat-bot";
 import ChatContainer from "@/components/ui/ChatContainer";
 import { ChatProvider } from "@/context/ChatContext";
 export default function HorizontalScroll(): JSX.Element {
@@ -55,30 +49,27 @@ export default function HorizontalScroll(): JSX.Element {
             </div>
           </section>
 
-          <section id="definition">
+          <section id="giai-doan-1">
             <OpinionSection />
             <DevelopmentSection />
           </section>
 
-          <section id="mission" className="bg-white-300">
-            <ConclusionSection />
-          </section>
-
-          <section id="progress" className="bg-white-300 my-5">
-            <HeroParallaxDemo />
-          </section>
-
-          <section id="opportunities-challenges" className="bg-black">
+          <section id="giai-doan-2" className="bg-black">
             <div className="h-[20vh]">
               <LampDemo />
             </div>
             <TimelineDemo />
           </section>
 
+          <section id="opinion" className="bg-white-300">
+            {/* <HeroParallaxDemo /> */}
+            <ConclusionSection />
+          </section>
+
           <section id="chat" className="bg-slate-950">
             <section className="text-white w-full bg-slate-950 grid place-content-center px-4 pt-10">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
-                MLN AI Chatbot
+                HCM202 AI Chatbot
               </h1>
             </section>
             <div className={`h-[90vh] w-full sm:px-[15%] sm:py-[5%]`}>

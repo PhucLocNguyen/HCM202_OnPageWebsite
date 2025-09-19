@@ -16,35 +16,27 @@ const navigation = [
     ],
   },
   {
-    id: "definition",
-    label: "Khái niệm",
-    hrefs: ["#definition"],
+    id: "giai-doan-1",
+    label: "(1930–1941)",
+    hrefs: [
+      "#giai-doan-1",
+    ],
   },
   {
-    id: "mission",
-    label: "Sứ mệnh lịch sử",
-    hrefs: ["#mission"],
+    id: "giai-doan-2",
+    label: "(1941–1969)",
+    hrefs: ["#giai-doan-2"],
   },
   {
-    id: "progress",
-    label: "Tiến bộ",
-    hrefs: ["#progress"],
-  },
-  {
-    id: "opportunities-challenges",
-    label: "Cơ hội và thách thức",
-    hrefs: ["#opportunities-challenges"],
+    id: "opinion",
+    label: "Nhận xét",
+    hrefs: ["#opinion"],
   },
   {
     id: "chat",
     label: "AI Chat",
     hrefs: ["#chat"],
   },
-  // {
-  //   id: "conclusion",
-  //   label: "Kết luận",
-  //   hrefs: ["#conclusion"],
-  // },
 ];
 
 export function SiteHeader() {
@@ -85,10 +77,10 @@ export function SiteHeader() {
                   width={40}
                   height={40}
                   alt="Logo"
-                  src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Lenin-Silhoutte_.svg"
+                  src="/assets/image/hcm-logo.png"
                 />
               </div>
-              <span className="font-bold  sm:inline">MLN131 - SE1735 - Team 1</span>
+              <span className="font-bold  sm:inline">HCM202 - SE1735 - Team 2</span>
             </Link>
           </div>
 

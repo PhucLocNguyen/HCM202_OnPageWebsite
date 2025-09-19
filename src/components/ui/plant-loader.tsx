@@ -50,8 +50,8 @@ export default function PlantLoader({
     <div className="flex min-h-[250px] min-w-[160px] flex-col items-center justify-center">
       <div className="relative h-80 min-w-[160px]">
         <Image
-          src="/assets/gif/lenin.gif"
-          alt="Loading animation of Lenin"
+          src="/assets/gif/vietnam-flag.gif"
+          alt="Loading animation of HCM"
           fill
           className="object-contain"
           priority
