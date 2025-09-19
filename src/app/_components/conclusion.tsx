@@ -18,24 +18,24 @@ import { motion } from "framer-motion";
 const items = [
   {
     icon: <Home />,
-    title: "💰 Kinh tế",
-    desc: 'Giải phóng triệt để lực lượng sản xuất, phát triển sản xuất hiện đại trên cơ sở công hữu về tư liệu sản xuất, tạo tiền đề vật chất – kỹ thuật dồi dào cho một xã hội mới không có đói nghèo và thiếu thốn.',
-    sliderName: "Kinh tế",
-    src: "/assets/image/economy.jpg",
+    title: "🌟 Phong thái và trí tuệ",
+    desc: "Nguyễn Ái Quốc là người trí tuệ, lịch thiệp, điềm đạm, có phong thái của một nhà văn hóa lớn; có bản lĩnh kiên cường, ứng xử tinh tế, giản dị mà nhân văn, tạo ấn tượng sâu sắc với mọi người như Mandenxtam miêu tả.",
+    sliderName: "Phong thái",
+    src: "/assets/image/hcm-12.png",
   },
   {
     icon: <Home />,
-    title: "⚖️ Chính trị – Xã hội",
-    desc: "Lãnh đạo cách mạng lật đổ ách thống trị của giai cấp tư sản, giành chính quyền về tay nhân dân lao động, thiết lập nhà nước kiểu mới (chuyên chính vô sản) để thực hiện dân chủ, công bằng và tiến bộ xã hội, xây dựng nền dân chủ rộng rãi cho đại đa số.",
-    sliderName: "Chính trị – Xã hội",
-    src: "/assets/image/politic.jpg",
+    title: "📚 Tư tưởng vượt thời đại",
+    desc: "Nguyễn Ái Quốc sớm tiếp thu và vận dụng chủ nghĩa Mác – Lênin vào giải phóng dân tộc, gắn giải phóng dân tộc với giải phóng giai cấp và con người, mở ra con đường mới cho các dân tộc thuộc địa — điều này thể hiện lý tưởng tiến bộ mang tính toàn cầu, biểu hiện của một nền “văn hóa tương lai”.",
+    sliderName: "Tư tưởng",
+    src: "/assets/image/hcm-11.jpg",
   },
   {
     icon: <Home />,
-    title: "📚 Văn hóa – Tư tưởng",
-    desc: "Xây dựng hệ giá trị mới (lao động, công bằng, dân chủ, bình đẳng, tự do) dựa trên nền tảng chủ nghĩa Mác – Lênin, xóa bỏ các tàn dư tư tưởng lạc hậu, phản động, xác lập ý thức hệ khoa học và cách mạng.",
-    sliderName: "Văn hóa – Tư tưởng",
-    src: "/assets/image/culture.jpg",
+    title: "🤝 Tình hữu ái quốc tế",
+    desc: "Nguyễn Ái Quốc luôn đề cao đoàn kết, hòa bình và công lý; đấu tranh không vì trả thù mà vì một thế giới bình đẳng, tự do, giúp đỡ các dân tộc bị áp bức.",
+    sliderName: "Quốc tế",
+    src: "/assets/image/hcm-13.jpg",
   },
 ];
 
@@ -84,11 +84,11 @@ export default function ConclusionSection() {
             }}
             className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-medium tracking-tight text-transparent"
           >
-            Sứ mệnh lịch sử <br/> của giai cấp công nhân
+            Nhận xét
           </motion.h1>
           <div className="max-w-7xl mx-auto pt-10 px-4 md:px-8 lg:px-10 mb-16">
             <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-2xl pt-10">
-              Sứ mệnh lịch sử là trách nhiệm mà lịch sử giao phó cho giai cấp công nhân. Đó là trở thành lực lượng tiên phong, thông qua chính đảng tiên phong (Đảng Cộng sản) tổ chức và lãnh đạo nhân dân lao động để xóa bỏ chế độ người bóc lột người, giải phóng toàn nhân loại khỏi mọi áp bức, bóc lột và xây dựng thành công xã hội cộng sản chủ nghĩa.
+              Năm 1923, nhà thơ, nhà báo nổi tiếng người Xô Viết O.Mandenxtam gặp Nguyễn Ái Quốc lúc này 33 tuổi ở Moskva, O.Mandenxtam đã đánh giá Nguyễn Ái Quốc là một người phương Đông lịch sự, là biểu hiện cho một nền văn hóa của tương lai: “Từ Nguyễn Ái Quốc tỏa ra một thứ văn hóa, không phải văn hóa châu Âu, mà có lẽ là một nền văn hóa của tương lai. Từ trong giọng nói đầm ấm, thanh cao của Người, chúng ta như nghe thấy ngày mai, như thấy viễn cảnh trời yên biển lặng của tình hữu ái bao la toàn thế giới mênh mang như nước đại dương”.
             </p>
           </div>
         </LampContainer>
@@ -130,28 +130,29 @@ export default function ConclusionSection() {
             </SliderBtnGroup>
 
             {/* Image Section */}
-            <SliderContent className="hidden  w-full md:w-3/6 lg:flex md:flex flex-col h-[40vh] md:h-full">
+            <SliderContent className="hidden w-full md:w-3/6 lg:flex md:flex flex-col h-[40vh] md:h-[70vh] pe-5">
               {items.map((item, index) => (
                 <SliderWrapper
                   className="h-full w-full"
                   key={index}
                   value={item?.sliderName}
                 >
-                  <Image
-                    className="h-full w-full object-cover rounded-lg pe-10"
-                    src={item?.src || "/placeholder.svg"}
-                    width={16}
-                    height={9}
-                    alt={item.sliderName}
-                    priority={index === 0}
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
+                  <div className="h-full w-full aspect-square rounded-lg overflow-hidden">
+                    <Image
+                      className="h-full w-full object-cover"
+                      src={item?.src || "/placeholder.svg"}
+                      width={500}
+                      height={500}
+                      alt={item.sliderName}
+                      priority={index === 0}
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
                 </SliderWrapper>
               ))}
             </SliderContent>
           </ProgressSlider>
         </div>
-        
 
         {/* Mobile Navigation Indicator */}
         <div className="hidden md:hidden fixed bottom-4 left-1/2 -translate-x-1/2  gap-2 z-20">

@@ -5,36 +5,38 @@ import { ReactLenis } from "lenis/react";
 import { useTransform, motion, useScroll, MotionValue } from "framer-motion";
 import { JSX, useRef } from "react";
 import Image from "next/image";
+
 const projects = [
   {
-    title: "Lao động bằng máy móc, năng suất cao",
+    title: "🔁 Trở lại gần biên giới Việt – Trung (cuối 1940)",
     description:
-      "Gắn liền với công nghệ hiện đại, công nhân làm việc có năng suất cao, tạo ra khối lượng sản phẩm khổng lồ.",
-    link: "/assets/image/factory.jpg",
+      "Hồ Chí Minh liên lạc với Trung ương Đảng Cộng sản Đông Dương, trực tiếp chỉ đạo phong trào cách mạng trong nước.",
+    link: "/assets/image/return.jpg",
     color: "#5196fd",
   },
   {
-    title: "Tính tổ chức – kỷ luật – hợp tác cao",
+    title: "📚 Mở lớp huấn luyện & viết 'Con đường giải phóng'",
     description:
-      "Môi trường làm việc trong các nhà máy, xí nghiệp đòi hỏi sự phối hợp chặt chẽ, tuân thủ kỷ luật và tinh thần hợp tác, tạo nên sức mạnh tập thể.",
-    link: "/assets/image/order.jpg",
+      "Người mở lớp huấn luyện cán bộ, viết tác phẩm Con đường giải phóng (1-1941), nêu rõ phương pháp cách mạng giành chính quyền.",
+    link: "/assets/image/huan-luyen-can-bo.jpg",
     color: "#8f89ff",
   },
   {
-    title: "Là sản phẩm và chủ thể của nền đại công nghiệp",
+    title: "📍 Hội nghị Trung ương 8 tại Pác Bó (5/1941)",
     description:
-      "Giai cấp công nhân vừa là kết quả của sự phát triển công nghiệp, vừa là lực lượng trực tiếp thúc đẩy sự phát triển đó, đại diện cho lực lượng sản xuất tiên tiến và phương thức sản xuất hiện đại.",
-    link: "/assets/image/product-of-technology.webp",
+      "Hồ Chí Minh chủ trì hội nghị, đưa ra chủ trương đặt nhiệm vụ giải phóng dân tộc lên hàng đầu, tạm gác khẩu hiệu cách mạng ruộng đất.",
+    link: "/assets/image/hoi-nghi-6.jpg",
     color: "#4caf50",
   },
   {
-    title: "Có tính cách mạng triệt để",
+    title: "🤝 Thành lập Mặt trận Việt Minh",
     description:
-      "Do địa vị kinh tế – xã hội của mình, họ không có gì để mất ngoài xiềng xích, nên có tinh thần đấu tranh không khoan nhượng, có đủ phẩm chất để lãnh đạo cách mạng xã hội.",
-    link: "/assets/image/revolutionary-hcm.jpg",
+      "Tập hợp, đoàn kết toàn dân trên cơ sở nòng cốt liên minh công nông, chuẩn bị khởi nghĩa vũ trang giành chính quyền.",
+    link: "/assets/image/viet-minh.jpg",
     color: "#ed649e",
   },
 ];
+
 export default function DevelopmentSection(): JSX.Element {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -48,7 +50,7 @@ export default function DevelopmentSection(): JSX.Element {
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl px-4 sm:px-8 font-semibold text-center tracking-tight leading-[120%]">
-            Những đặc điểm tạo nên sức mạnh và tiềm năng cách mạng của giai cấp công nhân
+            Giai đoạn trở về trực tiếp lãnh đạo – khẳng định tư tưởng (1939–1941)
           </h1>
         </section>
 
@@ -123,7 +125,7 @@ export const Card: React.FC<CardProps> = ({
             <p className="text-base sm:text-2xl">{description}</p>
           </div>
 
-          <div className="relative lg:w-[300px] md:w-[300px] sm:w-[400px] lg:aspect-[4/3] md:aspect-[4/3] sm:aspect-[5/3] rounded-lg overflow-hidden ms-10">
+          <div className="relative lg:w-[360px] md:w-[320px] sm:w-[300px] aspect-[5/3] rounded-lg overflow-hidden ms-3">
             <motion.div className="w-full h-full" style={{ scale: imageScale }}>
               <Image
                 fill

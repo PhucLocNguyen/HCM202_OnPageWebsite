@@ -19,24 +19,31 @@ export default function WelcomeSection() {
       <div className="absolute inset-0 z-0"></div>
       
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-16">
-        <SplitText
-          text="Sứ mệnh lịch sử của giai cấp công nhân"
-          className="text-3xl md:text-4xl lg:text-6xl font-bold text-center text-white px-4 bg-black/30 backdrop-blur-sm py-3 rounded-lg border border-white/10"
-          delay={30}
-          animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
-          animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-          easing="easeOutCubic"
-          threshold={0.2}
-          rootMargin="-50px"
-          onLetterAnimationComplete={handleAnimationComplete}
-        />
+        {`Quá trình phát triển tư tưởng Hồ Chí Minh \n giai đoạn 1930-1969`
+          .split("\n")
+          .map((line, i) => (
+            <SplitText
+              key={i}
+              text={line.trim()}
+              className="text-3xl md:text-4xl lg:text-6xl font-bold text-center text-white px-4 bg-black/30 backdrop-blur-sm py-3 rounded-lg border border-white/10 block"
+              delay={30}
+              animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+              animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+              easing="easeOutCubic"
+              threshold={0.2}
+              rootMargin="-50px"
+              onLetterAnimationComplete={handleAnimationComplete}
+            />
+        ))}
         
         <h2 className="text-white my-6 text-lg md:text-xl font-medium px-4 text-center bg-black/30 backdrop-blur-sm py-3 rounded-lg max-w-3xl border border-white/10">
-          <b>I. Quan điểm cơ bản chủ nghĩa Mác – Lênin về giai cấp công nhân và sứ mệnh lịch sử thế giới của giai cấp công nhân</b>
+          <b>Chương 2: Cơ sở, quá trình hình thành và phát triển tư tưởng Hồ Chí Minh
+            <br />
+            2.2. Quá trình hình thành và phát triển tư tưởng Hồ Chí Minh</b>
         </h2>
         
         <h3 className="text-white my-4 text-base md:text-lg px-4 text-center bg-black/30 backdrop-blur-sm py-2 rounded-lg max-w-3xl border border-white/10">
-          <b>Sản phẩm sáng tạo của nhóm 1, môn MLN131-SE1735 trường đại học FPT</b>
+          <b>Sản phẩm sáng tạo của nhóm 2, môn HCM202-SE1735 trường đại học FPT</b>
         </h3>
         
         <button

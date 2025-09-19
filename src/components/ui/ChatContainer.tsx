@@ -49,7 +49,7 @@ const ChatContainer = () => {
           >
             {msg.sender === "ai" && (
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Lenin-Silhoutte_.svg" // replace with your AI icon path
+                src="/assets/image/hcm-logo.png"
                 alt="AI"
                 className="w-6 h-6 rounded-full self-end"
               />
@@ -76,7 +76,7 @@ const ChatContainer = () => {
         {isLoading && (
           <div className="flex items-end gap-2 mb-4 justify-start">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Lenin-Silhoutte_.svg"
+              src="/assets/image/hcm-logo.png"
               alt="AI"
               className="w-6 h-6 rounded-full self-end"
             />

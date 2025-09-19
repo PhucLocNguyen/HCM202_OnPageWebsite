@@ -12,30 +12,45 @@ export default function OpinionSection(): JSX.Element {
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
 
             <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto items-center gap-8 lg:gap-12">
-              <blockquote className="lg:w-[58.33%] text-lg sm:text-xl lg:text-2xl 2xl:text-3xl font-medium text-left leading-relaxed tracking-wide">
+              <blockquote className="lg:w-[58.33%] text-lg sm:text-xl lg:text-xl 2xl:text-xl font-medium text-left leading-relaxed tracking-wide">
                 <p className="mb-6">
-                  🏭 Theo{" "}
-                  <span className="text-green-500 font-semibold">
-                    chủ nghĩa Mác – Lênin
-                  </span>
-                  , giai cấp công nhân là một tập đoàn xã hội đặc thù, hình
-                  thành và phát triển gắn liền với sự ra đời và lớn mạnh của nền
-                  công nghiệp hiện đại.
+                  📌 Giai đoạn thử thách – 
+                  <span className="text-green-500 font-semibold"> kiên định con đường cứu nước (1930–1934)</span>
+                </p>
+                <p className="mb-6">
+                  Năm 1930, Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất các tổ chức cộng sản, 
+                  thành lập Đảng Cộng sản Việt Nam và soạn thảo Cương lĩnh chính trị đầu tiên.
+                </p>
+                <p className="mb-6">
+                  Tuy nhiên, tư tưởng đặt nhiệm vụ giải phóng dân tộc lên hàng đầu của Người 
+                  bị một số người trong Quốc tế Cộng sản và nội bộ Đảng hiểu sai là 
+                  “hữu khuynh”, “dân tộc chủ nghĩa” do ảnh hưởng tư tưởng giáo điều, tả khuynh.
                 </p>
                 <p>
-                  ⚒️ Họ sử dụng máy móc, công nghệ tiên tiến để sản xuất ra của
-                  cải vật chất, đặc biệt là các sản phẩm công nghiệp, đóng vai
-                  trò chủ đạo trong nền kinh tế. Tuy nhiên, khác với giai cấp tư
-                  sản, công nhân không có quyền sở hữu đối với nhà máy, xí
-                  nghiệp mà buộc phải bán sức lao động để mưu sinh.
+                  ⚡ Dù bị hiểu lầm, Hồ Chí Minh vẫn kiên định con đường cách mạng dân tộc, 
+                  dân chủ, chờ thời cơ trở lại lãnh đạo.
                 </p>
               </blockquote>
-
-              <img
-                src="/assets/image/cau mo dau.jpg"
-                alt="Công nhân công nghiệp hiện đại"
-                className="w-full lg:w-[41.67%] rounded-lg shadow-md"
-              />
+              <div className="relative w-full lg:w-[41.67%] h-72">
+                {/* Top-left image */}
+                <img
+                  src="/assets/image/hoi-nghi-1.jpg"
+                  alt="Image 1"
+                  className="absolute top-0 left-0 w-80 h-52 object-cover rounded-lg shadow-md border-2 border-white rotate-[-8deg]"
+                />
+                {/* Top-right image */}
+                <img
+                  src="/assets/image/hieu-lam.jpg"
+                  alt="Image 2"
+                  className="absolute top-0 right-0 w-48 h-64 object-cover rounded-lg shadow-md border-2 border-white rotate-[8deg]"
+                />
+                {/* Bottom-center image */}
+                <img
+                  src="/assets/image/naq-1.jpg"
+                  alt="Image 3"
+                  className="absolute bottom-0 left-1/2 -translate-x-1/2 w-60 h-36 object-cover rounded-lg shadow-md border-2 border-white rotate-[-3deg]"
+                />
+              </div>
             </div>
           </section>
         </div>
@@ -43,18 +58,18 @@ export default function OpinionSection(): JSX.Element {
         <section className="text-white w-full bg-slate-950">
           <div className="flex flex-col lg:flex-row px-4 lg:px-16 max-w-7xl mx-auto">
             <div className="lg:sticky lg:top-0 lg:h-screen grid place-content-center w-full lg:w-1/2 py-8 lg:py-0">
-              <p className="text-lg sm:text-xl lg:text-2xl px-0 lg:px-8 font-medium text-left tracking-tight leading-relaxed">
-                <span className="font-bold">🌟 Giai cấp công nhân, </span>, theo chủ nghĩa Mác – Lênin, họ:
+              <p className="text-lg sm:text-xl lg:text-xl px-0 lg:px-8 font-medium text-left tracking-tight leading-relaxed">
+                <span className="font-bold">📍 Giai đoạn tìm đường trở lại – chuẩn bị lực lượng (1934–1938)</span>
                 <br />
-                <span className="font-bold">- 🏭 Là sản phẩm của nền đại công nghiệp</span>
+                - Sau khi thoát khỏi nhà tù của thực dân Anh ở Hồng Kông, Hồ Chí Minh sang Liên Xô học tại Trường Quốc tế Lênin và làm nghiên cứu sinh tại Viện nghiên cứu các vấn đề dân tộc và thuộc địa của Quốc tế Cộng sản.
                 <br />
-                <span className="font-bold">- 🌈 Đóng vai trò chủ đạo trong nền kinh tế</span>
+                - Trong thời gian này, Người vẫn bị hiểu lầm về quan điểm cách mạng, bị đứng ngoài hoạt động thực tiễn.
                 <br />
-                <span className="font-bold">- 🚫 Không sở hữu tư liệu sản xuất</span>
+                - Khi Chiến tranh thế giới thứ hai bùng nổ, Người nhận thấy thời cơ giải phóng dân tộc đang đến gần.
                 <br />
-                <span className="font-bold">- 💰 Bị bóc lột giá trị thặng dư</span>
+                - Tháng 6-1938, Người gửi thư xin được trở lại hoạt động: “Xin đồng chí giúp đỡ tôi thay đổi tình cảnh đau buồn này... Đừng để tôi sống quá lâu trong tình trạng không hoạt động và giống như là sống ở bên cạnh, ở bên ngoài của Đảng”.
                 <br />
-                <span className="font-bold">- ⚡ Có mâu thuẫn thúc đẩy đấu tranh giai cấp</span>
+                - Cuối năm 1938, Người rời Liên Xô sang Trung Quốc, chuẩn bị về nước.
               </p>
             </div>
 
@@ -63,36 +78,33 @@ export default function OpinionSection(): JSX.Element {
                 {
                   bg: "bg-red-500",
                   rotate: "rotate-6",
-                  title: "🏭 Gắn liền với công nghiệp hiện đại",
-                  image: "technology.png",
+                  title: "⛓️ Thoát khỏi nhà tù Hồng Kông",
+                  image: "prison-hong-kong.jpg",
                 },
                 {
                   bg: "bg-green-400",
                   rotate: "-rotate-6",
-                  title: "⚒️ Sản xuất ra của cải vật chất",
-                  image: "cultivation.jpg",
+                  title: "📚 Học tại Trường Quốc tế Lênin (Liên Xô)",
+                  image: "naq-4.jpg",
                 },
                 {
                   bg: "bg-orange-400",
                   rotate: "rotate-5",
-                  title:
-                    "🚫 Không sở hữu tư liệu sản xuất",
-                  image: "no-production.jpg",
+                  title: "📝 Nghiên cứu tại Viện Dân tộc và Thuộc địa",
+                  image: "naq-3.webp",
                 },
                 {
                   bg: "bg-blue-400",
                   rotate: "-rotate-5",
-                  title: "💰 Bị bóc lột giá trị thặng dư",
-                  image: "surplus-value.jpg",
+                  title: "💌 Gửi thư xin trở lại hoạt động (6/1938)",
+                  image: "letter.jpg",
                 },
                 {
                   bg: "bg-purple-400",
                   rotate: "rotate-6",
-                  title:
-                    "⚡ Mâu thuẫn thúc đẩy đấu tranh giai cấp",
-                  image: "revolution.jpg",
+                  title: "✈️ Chuẩn bị trở về nước (cuối 1938)",
+                  image: "return.jpg",
                 },
-
                 // ... Thêm các phần tử khác tương tự
               ].map((item, index) => (
                 <figure

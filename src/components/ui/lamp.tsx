@@ -16,7 +16,7 @@ export default function LampDemo() {
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-medium tracking-tight text-transparent"
       >
-        Cơ hội và thách thức <br/> của giai cấp công nhân trong kỷ nguyên 4.0
+        Thời kỳ từ đầu năm 1941 - 9/1969
       </motion.h1>
     </LampContainer>
   );

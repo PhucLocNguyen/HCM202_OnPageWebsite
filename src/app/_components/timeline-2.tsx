@@ -5,37 +5,43 @@ import { Timeline } from "@/components/ui/timeline";
 export function TimelineDemo() {
   const data = [
     {
-      title: "🌟 Cơ hội",
+      title: "📍 Giai đoạn trở về trực tiếp lãnh đạo – khẳng định tư tưởng (1941–1945)",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
-            <strong className="font-bold">Nâng cao trình độ:</strong><br/>
-            Giai cấp công nhân có cơ hội tiếp cận khoa học – công nghệ tiên tiến, nâng cao trình độ chuyên môn, kỹ năng mềm và khả năng giải quyết vấn đề, từ đó thúc đẩy năng suất lao động và giá trị bản thân.
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg mb-2">
+            <strong className="font-bold">Tháng 5-1941, Hội nghị Trung ương 8 tại Pác Bó (Cao Bằng) do Hồ Chí Minh chủ trì:</strong>
           </p>
+          <ul className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg list-disc list-inside">
+            <li>Đặt nhiệm vụ giải phóng dân tộc lên hàng đầu.</li>
+            <li>Tạm gác khẩu hiệu cách mạng ruộng đất.</li>
+            <li>Thành lập Mặt trận Việt Minh, đoàn kết toàn dân.</li>
+            <li>Chuẩn bị khởi nghĩa vũ trang giành chính quyền.</li>
+          </ul>
+          <br/>
           <div className="grid grid-cols-2 gap-4 mb-8">
             <Image
-              src="/assets/image/nang-cao-1.jpg"
+              src="/assets/image/giai-phong.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/nang-cao-2.jpg"
+              src="/assets/image/ruong-dat.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/nang-cao-3.jpg"
+              src="/assets/image/viet-minh.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/nang-cao-4.jpg"
+              src="/assets/image/khang-chien-phap-1.jpg"
               alt="Image"
               width={500}
               height={500}
@@ -43,33 +49,19 @@ export function TimelineDemo() {
             />
           </div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
-            <strong className="font-bold">Chuyển đổi nghề nghiệp:</strong><br/>
-            Có điều kiện được đào tạo lại, chuyển đổi nghề nghiệp sang các lĩnh vực mới nổi như trí tuệ nhân tạo, dữ liệu lớn, robot, kỹ thuật số, mở ra nhiều triển vọng phát triển cá nhân và đóng góp cho xã hội.
+            <strong className="font-bold">Năm 1944: </strong><br/>
+            Thành lập Việt Nam tuyên truyền giải phóng quân.
           </p>
           <div className="grid grid-cols-2 gap-4 mb-8">
             <Image
-              src="/assets/image/chuyen-nghe-1.jpg"
+              src="/assets/image/hcm-6.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/chuyen-nghe-2.jpg"
-              alt="Image"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/chuyen-nghe-3.webp"
-              alt="Image"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/chuyen-nghe-4.jpg"
+              src="/assets/image/giai-phong-quan.jpg"
               alt="Image"
               width={500}
               height={500}
@@ -77,33 +69,67 @@ export function TimelineDemo() {
             />
           </div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
-            <strong className="font-bold">Cải thiện đời sống:</strong><br/>
-            Thông qua việc làm chủ công nghệ, công nhân có thể cải thiện thu nhập, nâng cao đời sống vật chất và tinh thần, đồng thời củng cố vị thế xã hội của mình trong một nền kinh tế tri thức.
+            <strong className="font-bold">Tháng 8-1945: </strong><br/>
+            Ra Lời kêu gọi Tổng khởi nghĩa.
+          </p>
+          <div className="grid grid-cols-2 gap-4 mb-8">
+            <Image
+              src="/assets/image/quotes-1.jpg"
+              alt="Image"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/image/hcm-1.jpg"
+              alt="Image"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+          </div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
+            <strong className="font-bold">Ngày 2-9-1945: </strong><br/>
+            Đọc Tuyên ngôn Độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/assets/image/cai-thien-1.jpg"
+              src="/assets/image/viet-nam.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/cai-thien-2.jpg"
+              src="/assets/image/tuyen-ngon-doc-lap.jpg"
+              alt="Image"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />            
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "📍 Giai đoạn xây dựng và bảo vệ chính quyền non trẻ (1945–1946)",
+      content: (
+        <div>
+          <ul className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg list-disc list-inside">
+            <li>Đề ra phương châm Dĩ bất biến, ứng vạn biến: linh hoạt sách lược ngoại giao, tạm hoà hoãn với Tưởng hoặc Pháp để giữ độc lập.</li>
+            <li>Giữ vững chính quyền cách mạng trong thế “ngàn cân treo sợi tóc”.</li>
+          </ul>
+          <br/>
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/assets/image/triet-ly-di-bat-bien.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/cai-thien-3.jpg"
-              alt="Image"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/cai-thien-4.jpg"
+              src="/assets/image/dang-2.jpg"
               alt="Image"
               width={500}
               height={500}
@@ -114,37 +140,38 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "🗻 Thách thức",
+      title: "📍 Giai đoạn kháng chiến chống Pháp (1946–1954)",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
-            <strong className="font-bold">Nguy cơ mất việc làm:</strong><br/>
-            Sự phát triển của tự động hóa và robot có thể thay thế lao động giản đơn, gây ra nguy cơ mất việc làm cho một bộ phận công nhân nếu không kịp thời thích ứng và chuyển đổi kỹ năng.
-          </p>
+          <ul className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg list-disc list-inside">
+            <li>Hồ Chí Minh là linh hồn của kháng chiến.</li>
+            <li>Đề ra đường lối kháng chiến lâu dài, toàn dân, toàn diện, tự lực cánh sinh.</li>
+          </ul>
+          <br/>
           <div className="grid grid-cols-2 gap-4 mb-8">
             <Image
-              src="/assets/image/mat-viec-1.webp"
+              src="/assets/image/hcm-4.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/mat-viec-2.jpg"
+              src="/assets/image/hcm-10.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/mat-viec-3.jpg"
+              src="/assets/image/hcm-11.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/mat-viec-4.jpg"
+              src="/assets/image/hcm-8.jpg"
               alt="Image"
               width={500}
               height={500}
@@ -152,33 +179,19 @@ export function TimelineDemo() {
             />
           </div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
-            <strong className="font-bold">Khoảng cách số:</strong><br/>
-            Khoảng cách về trình độ, kỹ năng giữa công nhân trình độ cao và thấp sẽ ngày càng lớn, dẫn đến sự phân hóa sâu sắc trong nội bộ giai cấp công nhân, ảnh hưởng đến sự đoàn kết.
+            <strong className="font-bold">Ngày 19-12-1946: </strong><br/>
+            Lời kêu gọi toàn quốc kháng chiến nêu quyết tâm độc lập tự do.
           </p>
           <div className="grid grid-cols-2 gap-4 mb-8">
             <Image
-              src="/assets/image/khoang-cach-1.png"
+              src="/assets/image/hcm-5.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/khoang-cach-2.webp"
-              alt="Image"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/khoang-cach-3.jpg"
-              alt="Image"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/khoang-cach-4.jpg"
+              src="/assets/image/khang-chien-phap-2.jpg"
               alt="Image"
               width={500}
               height={500}
@@ -186,33 +199,69 @@ export function TimelineDemo() {
             />
           </div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
-            <strong className="font-bold">Áp lực thích ứng liên tục:</strong><br/>
-            Công nhân phải đối mặt với áp lực học tập và thích ứng liên tục với công nghệ mới. Nếu không duy trì việc học tập suốt đời, họ dễ bị đào thải khỏi thị trường lao động cạnh tranh.
+            <strong className="font-bold">Thắng lợi Điện Biên Phủ (1954) </strong> 
+            chấm dứt ách thống trị của Pháp, mở đầu sự sụp đổ hệ thống thuộc địa cũ.
           </p>
           <div className="grid grid-cols-2 gap-4 mb-8">
             <Image
-              src="/assets/image/thich-ung-1.jpg"
+              src="/assets/image/chien-thang-dbp-1.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/thich-ung-2.jpg"
+              src="/assets/image/chien-thang-dbp-2.jpg"
+              alt="Image"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "📍 Giai đoạn xây dựng CNXH ở miền Bắc, đấu tranh giải phóng miền Nam (1954–1969)",
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg mb-2">
+            Lãnh đạo thực hiện hai nhiệm vụ chiến lược:
+          </p>
+          <ul className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg list-disc list-inside mb-2">
+            <li>Xây dựng CNXH ở miền Bắc.</li>
+            <li>Đấu tranh giải phóng miền Nam, thống nhất đất nước.</li>
+          </ul>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg mb-2">
+            Hoàn thiện hệ thống tư tưởng về chính trị, kinh tế, văn hóa, quân sự, đối ngoại, đạo đức.
+            <br/>
+            Lời kêu gọi 17-7-1966: “Không có gì quý hơn độc lập, tự do”.
+          </p>
+          <br/>
+          <div className="grid grid-cols-2 gap-4 mb-8">
+            <Image
+              src="/assets/image/cnxh-bac.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/thich-ung-3.jpg"
+              src="/assets/image/giai-phong-mien-nam-3.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/thich-ung-4.jpg"
+              src="/assets/image/dang-3.jpg"
+              alt="Image"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/image/chinh-tri.jpg"
               alt="Image"
               width={500}
               height={500}
@@ -220,33 +269,18 @@ export function TimelineDemo() {
             />
           </div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg  mb-8">
-            <strong className="font-bold">Nguy cơ xa rời ý thức giai cấp:</strong><br/>
-            Sự thành công cá nhân trong kỷ nguyên số có thể khiến một bộ phận công nhân chạy theo lợi ích riêng, giảm tinh thần đoàn kết và ý thức giai cấp, làm suy yếu sức mạnh tổng thể của giai cấp.
+            Trước lúc đi xa, để lại Di chúc – kết tinh tư tưởng, đạo đức, trí tuệ, phong cách Hồ Chí Minh.
           </p>
           <div className="grid grid-cols-2 gap-4 mb-8">
             <Image
-              src="/assets/image/giai-cap-1.jpeg"
+              src="/assets/image/di-chuc.jpg"
               alt="Image"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
             <Image
-              src="/assets/image/giai-cap-2.jpg"
-              alt="Image"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/giai-cap-3.jpg"
-              alt="Image"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/giai-cap-4.jpg"
+              src="/assets/image/hcm-9.jpg"
               alt="Image"
               width={500}
               height={500}
