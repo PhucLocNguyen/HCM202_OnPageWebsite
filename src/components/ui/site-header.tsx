@@ -1,46 +1,42 @@
 "use client";
 
-import { AudioPlayer } from "@/components/ui/music-button";
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+
 const navigation = [
   {
     id: "welcome",
     label: "Giới thiệu",
     hrefs: [
       "#welcome-header",
-      // , "#welcome-content"
-    ], // Nhiều id cho "welcome"
+    ],
   },
   {
-    id: "analysis",
-    label: "Phân tích",
-    hrefs: ["#analysis"],
+    id: "giai-doan-1",
+    label: "(1930–1941)",
+    hrefs: [
+      "#giai-doan-1",
+    ],
   },
   {
-    id: "role",
-    label: "Vai trò",
-    hrefs: ["#role"],
-  },
-  {
-    id: "development",
-    label: "Phát triển",
-    hrefs: ["#development"],
+    id: "giai-doan-2",
+    label: "(1941–1969)",
+    hrefs: ["#giai-doan-2"],
   },
   {
     id: "opinion",
-    label: "Quan điểm",
+    label: "Nhận xét",
     hrefs: ["#opinion"],
   },
-  // {
-  //   id: "conclusion",
-  //   label: "Kết luận",
-  //   hrefs: ["#conclusion"],
-  // },
+  {
+    id: "chat",
+    label: "AI Chat",
+    hrefs: ["#chat"],
+  },
 ];
 
 export function SiteHeader() {
@@ -73,7 +69,7 @@ export function SiteHeader() {
           <div className="flex items-center">
             <Link
               href="/"
-              className="flex items-center space-x-2 text-green-500"
+              className="flex items-center space-x-2 text-yellow-500"
             >
               <div className="h-10 w-10 rounded-full bg-navy-blue overflow-hidden">
                 <Image
@@ -81,10 +77,10 @@ export function SiteHeader() {
                   width={40}
                   height={40}
                   alt="Logo"
-                  src="/assets/image/logo.jpg"
+                  src="/assets/image/hcm-logo.png"
                 />
               </div>
-              <span className="font-bold  sm:inline">Nhóm 2</span>
+              <span className="font-bold  sm:inline">HCM202 - SE1735 - Team 2</span>
             </Link>
           </div>
 
@@ -116,9 +112,6 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
-            <div className="flex items-center space-x-3 text-sm">
-              <AudioPlayer audioSrc="/music/sound.ogg" />
-            </div>
           </nav>
         </div>
 
@@ -144,12 +137,6 @@ export function SiteHeader() {
                   {item.label}
                 </Link>
               ))}
-              <div className="px-4 py-2">
-                <AudioPlayer audioSrc="/music/sound.ogg" />
-              </div>
-              {/* <div className="px-4 py-2">
-                <AccessCount />
-              </div> */}
             </nav>
           </div>
         )}

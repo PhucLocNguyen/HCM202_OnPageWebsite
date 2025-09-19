@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function useScrollSpy(ids: string[], offset = 64) {
     const [activeId, setActiveId] = useState("");
 
