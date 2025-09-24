@@ -14,7 +14,7 @@ export default function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-medium tracking-tight text-transparent"
+        className="mt-8 bg-gradient-to-br text-white from-slate-300 to-slate-500 bg-clip-text text-center text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-medium tracking-tight text-transparent"
       >
         Thời kỳ từ đầu năm 1941 - 9/1969
       </motion.h1>

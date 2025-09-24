@@ -26,7 +26,7 @@ export default function HorizontalScroll(): JSX.Element {
             // Add a small delay before hiding the loader
             setTimeout(() => setIsLoading(false), 500);
           }}
-          minimumLoadingTime={3500} // Set minimum loading time to 3 seconds
+          minimumLoadingTime={1500} // Set minimum loading time to 3 seconds
         />
       </div>
       <div className={`relative ${isLoading ? "hidden" : "block w-full"}`}>

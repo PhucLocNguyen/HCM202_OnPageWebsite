@@ -35,7 +35,7 @@ export async function sendMessageToGemini(message: string): Promise<string> {
 	Thông tin thêm: Năm 1923, nhà thơ, nhà báo nổi tiếng người Xô Viết O.Mandenxtam gặp Nguyễn Ái Quốc lúc này 33 tuổi ở Moskva, O.Mandenxtam đã đánh giá Nguyễn Ái Quốc là một người phương Đông lịch sự, là biểu hiện cho một nền văn hóa của tương lai: “Từ Nguyễn Ái Quốc tỏa ra một thứ văn hóa, không phải văn hóa châu Âu, mà có lẽ là một nền văn hóa của tương lai. Từ trong giọng nói đầm ấm, thanh cao của Người, chúng ta như nghe thấy ngày mai, như thấy viễn cảnh trời yên biển lặng của tình hữu ái bao la toàn thế giới mênh mang như nước đại dương”.
 	
 	Đây là câu hỏi của 1 người ghé thăm web mà bạn cần trả lời: ${message}
-	Nếu câu hỏi không liên quan đến tài liệu hoặc nội dung mà bạn cần trả lời thì hãy nói "Câu hỏi của bạn không liên quan đến đề tài của trang web này, bạn có thể tìm hiểu them thông qua các nguồn khác như Google"`;
+	Nếu câu hỏi không liên quan đến tài liệu hoặc nội dung mà bạn cần trả lời thì hãy nói "Câu hỏi của bạn không liên quan đến đề tài của trang web này, bạn có thể tìm hiểu thêm thông qua các nguồn khác như Google"`;
   const result = await model.generateContent(prompt);
   return result.response.text();
 }

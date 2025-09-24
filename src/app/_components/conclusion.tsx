@@ -82,12 +82,12 @@ export default function ConclusionSection() {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-medium tracking-tight text-transparent"
+            className="mt-8 bg-gradient-to-br text-white from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-medium tracking-tight text-transparent"
           >
             Nhận xét
           </motion.h1>
           <div className="max-w-7xl mx-auto pt-10 px-4 md:px-8 lg:px-10 mb-16">
-            <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-2xl pt-10">
+            <p className=" text-white dark:text-neutral-300 text-sm md:text-2xl pt-10">
               Năm 1923, nhà thơ, nhà báo nổi tiếng người Xô Viết O.Mandenxtam gặp Nguyễn Ái Quốc lúc này 33 tuổi ở Moskva, O.Mandenxtam đã đánh giá Nguyễn Ái Quốc là một người phương Đông lịch sự, là biểu hiện cho một nền văn hóa của tương lai: “Từ Nguyễn Ái Quốc tỏa ra một thứ văn hóa, không phải văn hóa châu Âu, mà có lẽ là một nền văn hóa của tương lai. Từ trong giọng nói đầm ấm, thanh cao của Người, chúng ta như nghe thấy ngày mai, như thấy viễn cảnh trời yên biển lặng của tình hữu ái bao la toàn thế giới mênh mang như nước đại dương”.
             </p>
           </div>
