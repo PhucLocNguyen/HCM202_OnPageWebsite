@@ -36,11 +36,11 @@ export default function WelcomeSection() {
             />
         ))}
         
-        <h2 className="text-white my-6 text-lg md:text-xl font-medium px-4 text-center bg-black/30 backdrop-blur-sm py-3 rounded-lg max-w-3xl border border-white/10">
+        {/* <h2 className="text-white my-6 text-lg md:text-xl font-medium px-4 text-center bg-black/30 backdrop-blur-sm py-3 rounded-lg max-w-3xl border border-white/10">
           <b>Chương 2: Cơ sở, quá trình hình thành và phát triển tư tưởng Hồ Chí Minh
             <br />
             2.2. Quá trình hình thành và phát triển tư tưởng Hồ Chí Minh</b>
-        </h2>
+        </h2> */}
         
         <h3 className="text-white my-4 text-base md:text-lg px-4 text-center bg-black/30 backdrop-blur-sm py-2 rounded-lg max-w-3xl border border-white/10">
           <b>Sản phẩm sáng tạo của nhóm 2, môn HCM202-SE1735 trường đại học FPT</b>
