@@ -12,6 +12,7 @@ import { JSX, useState } from "react";
 import PlantLoader from "@/components/ui/plant-loader";
 import ChatContainer from "@/components/ui/ChatContainer";
 import { ChatProvider } from "@/context/ChatContext";
+import QuizSection from "@/components/ui/QuizSection";
 export default function HorizontalScroll(): JSX.Element {
   const [isLoading, setIsLoading] = useState(true);
   return (
@@ -78,7 +79,7 @@ export default function HorizontalScroll(): JSX.Element {
               </ChatProvider>
             </div>
           </section>
-
+<QuizSection/>
           <div className="text-center py-8 bg-black">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold animate-gradient bg-gradient-to-r from-yellow-400 via-red-500 to-pink-600 bg-clip-text text-transparent">
               Cảm ơn bạn vì đã ghé thăm web!
