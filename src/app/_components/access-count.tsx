@@ -8,7 +8,7 @@ export default function AccessCount() {
     async function fetchData() {
       try {
         const response = await fetch(
-          "https://abacus.jasoncameron.dev/hit/mln111/teamdominatorss"
+          "https://abacus.jasoncameron.dev/hit/hcm202/team2"
         );
         const data = await response.json();
         setNumber(data.value); // Set the number from the API response
