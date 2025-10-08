@@ -13,6 +13,7 @@ import PlantLoader from "@/components/ui/plant-loader";
 import ChatContainer from "@/components/ui/ChatContainer";
 import { ChatProvider } from "@/context/ChatContext";
 import QuizSection from "@/components/ui/QuizSection";
+import AccessCount from "./_components/access-count";
 export default function HorizontalScroll(): JSX.Element {
   const [isLoading, setIsLoading] = useState(true);
   return (
@@ -86,6 +87,10 @@ export default function HorizontalScroll(): JSX.Element {
             </h2>
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mt-4">
               Chúng tôi trân trọng thời gian của bạn và hy vọng bạn thích trang web này.
+            </p>
+            <p className="flex justify-center">
+
+            <AccessCount />
             </p>
             <div className="flex justify-center mt-4">
               <svg
